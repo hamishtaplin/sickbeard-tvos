@@ -12,6 +12,7 @@ let Page = ATV.Page.create({
       .get('http://192.168.0.7:8081/api/22d311226b93024c0369305a415f904f/?cmd=show&tvdbid=' + tvdbid)
       .then((xhr) => {
         let response = xhr.response;
+        response.data.tvdbid = tvdbid;
         resolve(response.data);
       }, (xhr) => {
         let response = xhr.response;
