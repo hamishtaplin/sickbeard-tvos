@@ -11,7 +11,9 @@ let Page = ATV.Page.create({
   template: template,
   events: {
     select(e) {
-      console.log(e);
+      const id = e.target.getAttribute('id');
+      console.log(data[id]);
+      ATV.Navigation.navigate('show', data[id]);
     },
     highlight(e) {
       const id = e.target.getAttribute('id');
