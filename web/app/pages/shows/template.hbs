@@ -1,0 +1,28 @@
+<document>
+  <listTemplate>
+    <list>
+      <relatedContent id="relatedContent">
+        {{relatedContent}}
+      </relatedContent>
+      <header>
+        <title>TV Shows</title>
+      </header>
+      <section>
+        {{#if data}}
+          {{#each data}}
+          <listItemLockup id="{{@key}}">
+            <!-- <img src="{{banner_url @key }}" width="606" height="112" /> -->
+            <img src="{{thumb_url @key }}" width="68" height="100" />
+            <title class="scrollTextOnHighlight title">{{this.show_name}}</title>
+            <text class="subtitle">{{this.quality}} ∙ {{this.status}}</text>
+          </listItemLockup>
+          {{/each}}
+        {{else}}
+          <header>
+            <title>No Results</title>
+          </header>
+        {{/if}}
+      </section>
+    </list>
+  </listTemplate>
+</document>
