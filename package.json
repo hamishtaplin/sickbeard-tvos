@@ -1,32 +1,21 @@
 {
-  "name": "tvml-catalog-using-atvjs",
-  "version": "1.0.0",
-  "description": "Port of the original TVML Catalog Sample Code re-written using atvjs framework.",
-  "main": "web/app/app.js",
+  "name": "sickbeard-tvos",
+  "version": "0.0.1",
+  "description": "Sickbeard for tvOS",
   "scripts": {
     "start": "gulp",
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/emadalam/tvml-catalog-using-atvjs.git"
+    "url": "https://github.com/hamishtaplin/sickbeard-tvos"
   },
-  "keywords": [
-    "atvjs",
-    "tvos",
-    "tvmlkit",
-    "tvml",
-    "tvjs",
-    "appletv",
-    "catalog",
-    "sample"
-  ],
-  "author": "Emad Alam <emad.alam@yahoo.com>",
+  "author": "Hamish Taplin <hello@hamishtaplin.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/emadalam/tvml-catalog-using-atvjs/issues"
   },
-  "homepage": "https://github.com/emadalam/tvml-catalog-using-atvjs#readme",
+  "homepage": "https://github.com/hamishtaplin/sickbeard-tvos/issues",
   "devDependencies": {
     "babel-core": "6.1.21",
     "babel-loader": "6.2.0",
