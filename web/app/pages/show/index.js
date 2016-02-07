@@ -1,5 +1,6 @@
 import ATV from 'atvjs';
 
+import sb from 'lib/sickbeard';
 import template from './template.hbs';
 
 let Page = ATV.Page.create({
@@ -9,7 +10,7 @@ let Page = ATV.Page.create({
 		const {tvdbid} = options;
     ATV
       .Ajax
-      .get('http://192.168.0.7:8081/api/22d311226b93024c0369305a415f904f/?cmd=show&tvdbid=' + tvdbid)
+      .get(sb('show', { tvdbid: tvdbid }))
       .then((xhr) => {
         let response = xhr.response;
         response.data.tvdbid = tvdbid;
